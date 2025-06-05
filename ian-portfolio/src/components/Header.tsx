@@ -6,21 +6,23 @@ export const Header = () => {
     const [open, setOpen] = useState(false);
 
     return (
-        <header className="flex items-center justify-between p-4 bg-black text-white">
+        <header className="flex items-center justify-between lg:justify-around p-4 bg-gray-900 text-white">
         <h1 className="text-2xl font-bold cursor-pointer"><a href="">&lt;IanPagés /&gt;</a></h1>
         
-        <nav className="hidden md:block">
-            <ul className="flex space-x-4">
-            <li>//<a href="#about" className="hover:underline ml-2">Sobre Mí</a></li>
-            <li>//<a href="#technologies" className="hover:underline ml-2">Tecnologías</a></li>
-            <li>//<a href="#experience" className="hover:underline ml-2">Experiencia</a></li>
-            <li>//<a href="#projects" className="hover:underline ml-2">Proyectos</a></li>
-            <li>//<a href="#contact" className="hover:underline ml-2">Contacto</a></li>
-            <li>Idioma</li>
+        <nav className="hidden lg:block">
+            <ul className="flex space-x-4 bg-black p-2 rounded-lg px-4">
+            <li className="bg-gray-800 p-2 rounded-lg hover:scale-110 duration-400 hover:underline">//<a href="#about" className=" ml-2">Sobre Mí</a></li>
+            <li className="bg-gray-800 p-2 rounded-lg hover:scale-110 duration-400 hover:underline">//<a href="#technologies" className="ml-2">Tecnologías</a></li>
+            <li className="bg-gray-800 p-2 rounded-lg hover:scale-110 duration-400 hover:underline">//<a href="#experience" className="ml-2">Experiencia</a></li>
+            <li className="bg-gray-800 p-2 rounded-lg hover:scale-110 duration-400 hover:underline">//<a href="#projects" className="ml-2">Proyectos</a></li>
+            <li className="bg-gray-800 p-2 rounded-lg hover:scale-110 duration-400 hover:underline">//<a href="#contact" className="ml-2">Contacto</a></li>
+            {/*Añadir la descarga del CV */}
+            <li className="bg-gray-800 p-2 rounded-lg hover:scale-110 duration-400 hover:underline">Descargar CV</li>
+            <li className="bg-gray-800 p-2 rounded-lg hover:scale-110 duration-400 hover:underline cursor-pointer">Idioma</li>
             </ul>
         </nav>
-        {/* Mobile Dropdown Menu */}
-        <div className="md:hidden relative">
+        
+        <div className="lg:hidden relative">
             <button 
             onClick={()=> setOpen(!open)}
             aria-label="Abrir Menú" className="focus:outline-none">
