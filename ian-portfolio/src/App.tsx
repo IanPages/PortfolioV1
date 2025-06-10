@@ -131,17 +131,21 @@ function App() {
     <div className=" text-white min-h-screen scroll-smooth flex flex-col ">
       <AnimatedBg />
       <Header />
-      <motion.div id="about" className='py-12' initial={{ opacity: 0, y: 40}}
-      whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }}>
+      <motion.div
+        id="about"
+        className='py-12'
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+      >
         <div className='bg-gradient-to-br from-gray-700 to-gray-900 rounded  flex flex-col items-center justify-center text-center py-12 space-y-4 max-w-4xl mx-auto'>
           <img src="/ian.jpg" alt="Ian Pagés Rodríguez" className='w-32 h-32 rounded-full shadow-lg mb-4' />
           <h1>Ian Pagés Rodríguez</h1>
           <p>FullStack developer apasionado y curioso por las nuevas tecnologías</p>
           <button className='bg-red-500 hover:bg-red-800 duration-500 p-2 rounded shadow-md font-semibold'>
-            <ScrollLink to="contact" smooth={true} duration={600} offset={-60} className="block px-4 py-2 cursor-pointer">Contactar</ScrollLink></button>
+        <ScrollLink to="contact" smooth={true} duration={600} offset={-60} className="block px-4 py-2 cursor-pointer">Contactar</ScrollLink>
+          </button>
         </div>
-        
-        
       </motion.div>
       <motion.div id="technologies" className='py-12' initial={{ opacity: 0, y: 40}}
       whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true, amount:0.3 }}>
@@ -175,13 +179,13 @@ function App() {
           Experiencia y Estudios</h2>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-4xl mx-auto'>
           <div>
-            <h3 className='text-xl font-semibold mb-6'>Experiencia Laboral</h3>
+            <h3 className='text-xl font-semibold mb-6 ml-6'>Experiencia Laboral</h3>
             <ul className='space-y-6'>
               {experience.map((exp,id) => {
                 return (
                   <li key={id} className='border-l-4 border-red-500 pl-4'>
                     <h4 className='font-bold'>{exp.title}</h4>
-                    <span className='text-sm text-gray-400'>{exp.company} | {exp.date}</span>
+                    <span className='text-sm text-red-400'>{exp.company} | {exp.date}</span>
                     <p className='text-gray-300 text-m'>{exp.description}</p>
                   </li>
                 )
@@ -189,13 +193,13 @@ function App() {
             </ul>
           </div>
           <div>
-            <h3 className='text-xl font-semibold mb-6'>Educación</h3>
+            <h3 className='text-xl font-semibold mb-6 ml-6'>Educación</h3>
             <ul className='space-y-6'>
               {education.map((edu,id) => {
                 return (
                   <li key={id} className='border-l-4 border-blue-500 pl-4'>
                     <h4 className='font-bold'>{edu.title}</h4>
-                    <span className='text-sm text-gray-400'>{edu.college} | {edu.date}</span>
+                    <span className='text-sm text-blue-400'>{edu.college} | {edu.date}</span>
                   </li>
                 )
               })}
