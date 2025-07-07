@@ -91,6 +91,13 @@ function App() {
       img: '/skillhub.png',
       link1: '',
       link2: ''
+    },
+    {inprogress: true,
+      name: t('proj4_name'),
+      description: t('proj4_desc'),
+      img: '/MultiToolHelper.png',
+      link1: '',
+      link2: 'https://github.com/IanPages/MultiToolHelper.git',
     }
   ];
 
