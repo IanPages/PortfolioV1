@@ -91,6 +91,15 @@ function App() {
       img: '/skillhub.png',
       link1: '',
       link2: ''
+    },
+    {
+      inprogress: false,
+      name: t('proj4_name'),
+      description: t('proj4_desc'),
+      img: '/MultiToolHelper.png',
+      link1: '',
+      link2: 'https://github.com/IanPages/MultiToolHelper.git',
+      liveDemo: 'https://multi-tool-helper-dsg5.vercel.app'
     }
   ];
 
@@ -226,6 +235,8 @@ function App() {
                       <a href={project.link1} target="_blank" rel="noopener noreferrer" className='text-yellow-300 hover:underline'>{t('code_back')}</a>)}
                     {project.link2 && (
                       <a href={project.link2} target="_blank" rel="noopener noreferrer" className='text-yellow-500 hover:underline'>{t('code_front')}</a>)}
+                    {project.liveDemo && (
+                      <a href={project.liveDemo} target="_blank" rel="noopener noreferrer" className='text-green-400 hover:underline'>{t('live_demo')}</a>)}
                   </div>
                 </div>
               </div>
