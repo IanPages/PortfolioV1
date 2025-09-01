@@ -36,7 +36,7 @@ export const Header = () => {
         <li className=" p-2 rounded-lg hover:scale-110 duration-400 hover:underline"> <ScrollLink to="experience" smooth={true} duration={600} offset={-60} className="ml-2 cursor-pointer">{t("experience")}</ScrollLink></li>
         <li className=" p-2 rounded-lg hover:scale-110 duration-400 hover:underline"> <ScrollLink to="projects" smooth={true} duration={600} offset={-60} className="ml-2 cursor-pointer">{t("projects")}</ScrollLink></li>
         <li className=" p-2 rounded-lg hover:scale-110 duration-400 hover:underline"> <ScrollLink to="contact" smooth={true} duration={600} offset={-60} className="ml-2 cursor-pointer">{t("contact")}</ScrollLink></li>
-        <li className=" p-2 rounded-lg hover:scale-110 duration-400 hover:underline"> <a href="/CVIanPages.pdf" download target="_blank" rel="noopener noreferrer" className="ml-2 cursor-pointer">{t("download_cv")}</a></li>
+        <li className=" p-2 rounded-lg hover:scale-110 duration-400 hover:underline"> <a href="/Eng-IanPages-CV.pdf" download target="_blank" rel="noopener noreferrer" className="ml-2 cursor-pointer">{t("download_cv")}</a></li>
         <li className=" p-2 rounded-lg hover:scale-110 duration-400 hover:underline cursor-pointer flex items-center" onClick={handleLanguageToggle}>
             <img src={isSpanish ? "/es-flag.png" : "/uk-flag.png"} alt="flag" className="w-12 h-8 inline" />
         </li>
@@ -59,7 +59,7 @@ export const Header = () => {
             <li><ScrollLink to="experience" smooth={true} duration={600} offset={-60} className="block px-4 py-4 cursor-pointer duration-300 hover:underline hover:scale-110" onClick={() => setOpen(false)}>{t("experience")}</ScrollLink></li>
             <li><ScrollLink to="projects" smooth={true} duration={600} offset={-60} className="block px-4 py-4 cursor-pointer duration-300 hover:underline hover:scale-110" onClick={() => setOpen(false)}>{t("projects")}</ScrollLink></li>
             <li><ScrollLink to="contact" smooth={true} duration={600} offset={-60} className="block px-4 py-4 cursor-pointer duration-300 hover:underline hover:scale-110" onClick={() => setOpen(false)}>{t("contact")}</ScrollLink></li>
-            <li><a href="/CVIanPages.pdf" download target="_blank" rel="noopener noreferrer" className="block px-4 py-4 cursor-pointer duration-300 hover:underline hover:scale-110" onClick={() => setOpen(false)}>{t("download_cv")}</a></li>
+            <li><a href="/Eng-IanPages-CV.pdf" download target="_blank" rel="noopener noreferrer" className="block px-4 py-4 cursor-pointer duration-300 hover:underline hover:scale-110" onClick={() => setOpen(false)}>{t("download_cv")}</a></li>
             <li className="cursor-pointer px-4 py-2 duration-300 hover:underline hover:scale-110 flex items-center" onClick={() => { handleLanguageToggle(); setOpen(false); }}>
                 <img src={isSpanish ? "/es-flag.png" : "/uk-flag.png"} alt="flag" className="w-12 h-8 inline" />
             </li>

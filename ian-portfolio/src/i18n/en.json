@@ -50,5 +50,10 @@
   "proj2_name": "Ticketflow",
   "proj2_desc": "Final degree project on ticket sales for indoor and outdoor events, developed with Spring Boot, Angular, Tailwind CSS, Stripe, and Cloudinary.",
   "proj3_name": "SkillHub | In Progress",
-  "proj3_desc": "Application for freelancers and companies to find professionals and new projects, developed with Spring Boot, React.js, Tailwind CSS, Stripe, and Cloudinary."
+  "proj3_desc": "Application for freelancers and companies to find professionals and new projects, developed with Spring Boot, React.js, Tailwind CSS, Stripe, and Cloudinary.",
+  "proj4_name": "MultiToolHelper",
+  "proj4_desc": "A versatile tool designed to assist users to track daily tasks, manage their notepads and structure time effectively with a Pomodoro timer, developed with React.js and Tailwind CSS",
+  "live_demo": "Live Demo",
+  "edu0_title": "Master's in AI and Big Data"
+  
 }

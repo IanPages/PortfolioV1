@@ -51,6 +51,11 @@ function App() {
 
   const education = [
     {
+      title: t('edu0_title'),
+      college: 'CIFP César Manrique',
+      date: '09-2025 / 06-2026',
+    },
+    {
       title: t('edu1_title'),
       college: 'CIFP César Manrique',
       date: '09-2023 / 06-2025',
